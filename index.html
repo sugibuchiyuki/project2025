@@ -12,11 +12,43 @@
             font-family: Arial, sans-serif;  /* フォントはArialに指定 */
             margin: 0;                /* 上下の余白をゼロに */
             padding: 20px;            /* タイトルの周りに余白 */
-            border-bottom: 5px solid limegreen; /* 黄緑色の下線を追加 */
+            display: inline-block;    /* インラインブロックで幅をタイトルに合わせる */
+            border-bottom: 10px solid limegreen; /* 黄緑色の太めの下線を追加 */
+        }
+
+        /* 段落のスタイル */
+        p {
+            font-size: 1.5em;           /* 文字サイズを少し大きく */
+            line-height: 1.6;           /* 行間を広く */
+            text-align: center;         /* 文字を中央揃え */
+            padding: 10px;              /* 段落に余白を追加 */
+        }
+
+        /* チャットボットのための空欄を右下に作成 */
+        .chat-space {
+            position: fixed;           /* 固定位置 */
+            bottom: 20px;              /* 画面の下から20px */
+            right: 20px;               /* 画面の右から20px */
+            width: 200px;              /* 空欄の幅を200px */
+            height: 200px;             /* 空欄の高さを200px */
+            background-color: #f0f0f0; /* 空欄の背景色（薄いグレー） */
+            border: 2px solid limegreen; /* 黄緑色の枠線 */
+            border-radius: 10px;       /* 角を丸く */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 少し影をつけて立体感を出す */
         }
     </style>
 </head>
 <body>
     <h1>今日のご飯はこれだ！！</h1>
+
+    <!-- 追加する段落 -->
+    <p>こんにちは！今、あなたは何を食べたいですか？毎日毎日、食べるものを決めるのって意外と大変ですよね？</p>
+    <p>そんな時は、右下のチャットボットに頼んで、今の気分にぴったりなご飯を提案してもらいましょう！</p>
+    <p>「今の時間帯、どんな味が食べたいか」「どのくらいの量を食べたいか」「果物が欲しいか」など、何でも入力してみてください。</p>
+
+    <!-- チャットボットのための空欄 -->
+    <div class="chat-space">
+        <!-- チャットボットが後でここに入ります -->
+    </div>
 </body>
 </html>
