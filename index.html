@@ -7,12 +7,12 @@
         /* タイトルのスタイル */
         h1 {
             color: orange;            /* 文字の色をオレンジ */
-            text-align: center;       /* 文字を中央揃え */
+            text-align: center;       /* タイトルを中央揃え */
             font-size: 6vw;           /* 画面幅に対しての文字サイズ */
             font-family: Arial, sans-serif;  /* フォントはArialに指定 */
             margin: 0;                /* 上下の余白をゼロに */
             padding: 20px;            /* タイトルの周りに余白 */
-            display: inline-block;    /* インラインブロックで幅をタイトルに合わせる */
+            display: block;           /* ブロック要素として扱い、中央揃え */
             border-bottom: 10px solid limegreen; /* 黄緑色の太めの下線を追加 */
         }
 
@@ -32,7 +32,7 @@
             width: 200px;              /* 空欄の幅を200px */
             height: 200px;             /* 空欄の高さを200px */
             background-color: #f0f0f0; /* 空欄の背景色（薄いグレー） */
-            border: 2px solid limegreen; /* 黄緑色の枠線 */
+            border: 2px solid orange;  /* 枠線の色をオレンジに変更 */
             border-radius: 10px;       /* 角を丸く */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 少し影をつけて立体感を出す */
         }
